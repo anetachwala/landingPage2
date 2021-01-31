@@ -3,9 +3,19 @@ const button = document.querySelector(".btn1-code");
 const phoneNumber = document.querySelector("#number");
 const warning = document.querySelector("#your-code");
 const yourCode = "Your code: ";
+const cookieBox = document.querySelector(".cookie-container");
+const cookieBtn = document.querySelector(".cookie-button");
 
 
 
+cookieBtn.addEventListener('click', () => {
+    cookieBox.classList.remove('active');
+})
+
+setTimeout(() => {
+    cookieBox.classList.add("active");
+    
+}, 1000);
 
 
 

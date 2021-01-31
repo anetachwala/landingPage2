@@ -1044,3 +1044,40 @@ i:hover {
 .footer h1 {
     padding: 1em;
 }
+
+/*-----------------Cookie-container---------------*/
+
+.cookie-container {
+    position: fixed;  
+    font-family: 'Raleway', sans-serif;
+    bottom: -100%;
+    left: 15px;
+    right: 15px;
+    z-index: 60;
+    background: black;
+    color: white;
+    padding: 0 2em;
+    transition: 2s;
+    box-shadow: 0 -2px 14px rgba(255, 255, 255, 0.253); 
+}
+
+.cookie-container.active {
+    bottom: 0;
+}
+
+.cookie-container h1{
+    font-size: 1rem;
+}
+
+.cookie-container a {
+    color: white;
+}
+
+.cookie-button {
+    background:rgba(151, 18, 18, 0.822);
+    border: none;
+    padding: 10px 40px;
+    margin-bottom: 1em;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
